@@ -11,10 +11,29 @@
             <p>Setup</p>
             <nav><!-- le dice a mi navegador que es una lista de navegación-->
                 <ol>
-                    <li>Google Chrome</li><!-- primer elemento de nuestra lista, especifican los ítems de la lista -->
-                    <li>Visual Studio Code</li><!-- segundo elemento de nuestra lista, especifican los ítems de la lista -->
-                    <li>Github</li><!-- tercero elemento de nuestra lista, especifican los ítems de la lista -->
-                    <li>Figma</li><!-- cuarto elemento de nuestra lista, especifican los ítems de la lista -->
+                    <li>
+                        <a href="#google-chrome"> <!-- #(vincula un elemento por dentro) y luego del # tengo que hacer referencia a un elemento con id y tiene que ser unico por pag-->
+                            Google Chrome
+                        </a>
+                    </li><!-- primer elemento de nuestra lista, especifican los ítems de la lista -->
+                    <li>
+                        <a href="#visual-studio-code">
+                            Visual Studio Code
+                        </a>
+                        
+                    </li><!-- segundo elemento de nuestra lista, especifican los ítems de la lista -->
+                    <li>
+                        <a href="#github">
+                            
+                            Github
+                        </a>
+                    </li><!-- tercero elemento de nuestra lista, especifican los ítems de la lista -->
+                    <li>
+                        <a href="#figma">
+                            
+                            Figma
+                        </a>
+                    </li><!-- cuarto elemento de nuestra lista, especifican los ítems de la lista -->
                 </ol><!-- lista ordena ej: 1. 2. 3. 4. -->
                 <ul></ul><!-- lista sin ordenar a traves de puntitos que parecen asteriscos -->
                 <p>Conceptos esenciales del Desarrollo Web</p>
@@ -31,24 +50,24 @@
         <h1>Curso esencial de HTML y CSS</h1>
         <p>Este es el inicio de la carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
         <h2 style="font: size 30px">Setup</h2>
-        <img src="images/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome"><!-- src(dirección de la imagen) y alt(atributo de accesibilidad que me permite colocar un texto, cuando nos equivoquemos en escribir el nombre de la imagen a mostrar) -->
-        <h3> Google Chrome</h3>
+        <img src="./images/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome"><!-- src(dirección de la imagen) y alt(atributo de accesibilidad que me permite colocar un texto, cuando nos equivoquemos en escribir el nombre de la imagen a mostrar) -->
+        <h3 id="google-chrome"> Google Chrome</h3>
         <p>
             Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.
         </p>
         
-        <img src="images/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
-        <h3>Visual Studio Code</h3>
+        <img src="./images/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
+        <h3 id="visual-studio-code"> Visual Studio Code</h3>
         <p>
             Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la capacidad de extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar el lenguaje en el que se desemvuelva.
         </p>
-        <img src="images/github.png" alt="Logo de GitHub" title="Logo de Github">
-        <h3>Github</h3>
+        <img src="./images/github.png" alt="Logo de GitHub" title="Logo de Github">
+        <h3 id="github">Github</h3>
         <p>
             Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo el mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de manera privada, Github será esencial para almacenar tu futuro portafolio.
         </p>
-        <img src="images/figma.png" alt="Logo de figma" title="Logo de figma">
-        <h3>Figma</h3>
+        <img src="./images/figma.png" alt="Logo de figma" title="Logo de figma">
+        <h3 id="figma">Figma</h3>
         <p>
             Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su implementación por su fácil uso porque puede ser usado directamente desde el navegador.
         </p>
@@ -65,14 +84,14 @@
         <p>
             El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar dependencias, herencias en css y que tan complejo es nuestro proyecto.
         </p>
-        <img src="images/dom.png" alt="Estructura de arbol que representa al Document Object Model" alt="Estructura de arbol que representá al Document Object Model" title="DOM" Width="900px" height="470px" >
+        <img src="./images/dom.png" alt="Estructura de arbol que representa al Document Object Model" alt="Estructura de arbol que representá al Document Object Model" title="DOM" Width="900px" height="470px" >
         <h3>Semántica</h3>
         <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido, categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
         <h3>Atributos</h3>
         <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos funcionan en solo alguna etiquetas como src</p>
         <h3>CSS</h3>
         <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML</p>
-        <img src="images/css.png" alt="Logo de CSS" title="Logo de CSS">
+        <img src="./images/css.png" alt="Logo de CSS" title="Logo de CSS">
         <h2>Modelo de caja</h2>
         <h3>El modelo está compuesto por: </h3>
         <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
@@ -97,7 +116,12 @@
             <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
         </ul>
         <h3>Modelo de caja</h3>
-        <img src="images/foto-leonidas.png" alt="foto-de-Leonidas" title="foto-de-Leonidas">
-
+        <img src="./images/foto-leonidas.png" alt="foto-de-Leonidas" title="foto-de-Leonidas">
+        <!-- <a href="https://leonidasesteban.com/">página web de Leonidas</a>asi se representan los link, me quita mis pagina actual y me abre la otra --> 
+        <!--<a href="https://leonidasesteban.com/" target="_blank">referencias</a> asi se representan los link, no me quita mi pagina actual sino que me abre el enlace en otra pestaña -->
+        <p>
+            Si tienes alguna pregunta escríbeme a 
+            <a href="mailto:me@leonidasesteban.com" >me@leonidasesteban.com</a>
+        </p>
     </body>
 </html>
