@@ -8,43 +8,82 @@
     </head>
     <body>
         <header> <!-- cabecera de nuestra pagina -->
-            <p>Setup</p>
+            
             <nav><!-- le dice a mi navegador que es una lista de navegación-->
-                <ol>
-                    <li>
-                        <a href="#google-chrome"> <!-- #(vincula un elemento por dentro) y luego del # tengo que hacer referencia a un elemento con id y tiene que ser unico por pag-->
-                            Google Chrome
-                        </a>
-                    </li><!-- primer elemento de nuestra lista, especifican los ítems de la lista -->
-                    <li>
-                        <a href="#visual-studio-code">
-                            Visual Studio Code
-                        </a>
-                        
-                    </li><!-- segundo elemento de nuestra lista, especifican los ítems de la lista -->
-                    <li>
-                        <a href="#github">
+                <details open>
+                    <summary>
+                        Setup
+                    </summary>
+                    <ol>
+                        <li>
+                            <a href="#google-chrome"> <!-- #(vincula un elemento por dentro) y luego del # tengo que hacer referencia a un elemento con id y tiene que ser unico por pag-->
+                                Google Chrome
+                            </a>
+                        </li><!-- primer elemento de nuestra lista, especifican los ítems de la lista -->
+                        <li>
+                            <a href="#visual-studio-code">
+                                Visual Studio Code
+                            </a>
                             
-                            Github
-                        </a>
-                    </li><!-- tercero elemento de nuestra lista, especifican los ítems de la lista -->
-                    <li>
-                        <a href="#figma">
-                            
-                            Figma
-                        </a>
-                    </li><!-- cuarto elemento de nuestra lista, especifican los ítems de la lista -->
-                </ol><!-- lista ordena ej: 1. 2. 3. 4. -->
-                <ul></ul><!-- lista sin ordenar a traves de puntitos que parecen asteriscos -->
-                <p>Conceptos esenciales del Desarrollo Web</p>
-                <ol>
-                    <li>Qué es HTML</li>
-                    <li>Qué esencialestiquetas</li>
-                    <li>DOM</li>
-                    <li>Semántica</li>
-                    <li>Atributos</li>
-                    <li>Qué es CSS</li>
-                </ol>
+                        </li><!-- segundo elemento de nuestra lista, especifican los ítems de la lista -->
+                        <li>
+                            <a href="#github">
+                                
+                                Github
+                            </a>
+                        </li><!-- tercero elemento de nuestra lista, especifican los ítems de la lista -->
+                        <li>
+                            <a href="#figma">
+                                
+                                Figma
+                            </a>
+                        </li><!-- cuarto elemento de nuestra lista, especifican los ítems de la lista -->
+                    </ol><!-- lista ordena ej: 1. 2. 3. 4. -->
+                    <ul></ul><!-- lista sin ordenar a traves de puntitos que parecen asteriscos -->
+                </details>
+                    <details open>
+                        <summary>
+                            Conceptos esenciales del Desarrollo Web
+                        </summary>
+                        <ol>
+                            <li>
+                                <a href="#que-es-html">
+        
+                                    Qué es HTML
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#etiquetas">
+        
+                                    Qué son las etiquetas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#dom">
+        
+                                    DOM
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#sémantica">
+        
+                                    Semántica
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#atributos">
+        
+                                    Atributos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#css">
+        
+                                    Qué es CSS
+                                </a>
+                            </li>
+                        </ol>
+                    </details>
             </nav>
         </header>
         <h1>Curso esencial de HTML y CSS</h1>
@@ -73,23 +112,23 @@
         </p>
         <hr>
         <h2>Conceptos esenciales del Desarrollo Web</h2>
-        <h3>Qué es HTML</h3>
+        <h3 id="que-es-html">Qué es HTML</h3>
         <p>
             Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido.
         </p>
-        <h3>Etiquetas</h3>
+        <h3 id="etiquetas">Etiquetas</h3>
         <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.</p>
         <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer, section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos una pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como Software Developer.</p>
-        <h3>DOM</h3>
+        <h3 id="dom">DOM</h3>
         <p>
             El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar dependencias, herencias en css y que tan complejo es nuestro proyecto.
         </p>
         <img src="./images/dom.png" alt="Estructura de arbol que representa al Document Object Model" alt="Estructura de arbol que representá al Document Object Model" title="DOM" Width="900px" height="470px" >
-        <h3>Semántica</h3>
+        <h3 id="sémantica">Semántica</h3>
         <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido, categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
-        <h3>Atributos</h3>
+        <h3 id="atributos">Atributos</h3>
         <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos funcionan en solo alguna etiquetas como src</p>
-        <h3>CSS</h3>
+        <h3 id="css">CSS</h3>
         <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML</p>
         <img src="./images/css.png" alt="Logo de CSS" title="Logo de CSS">
         <h2>Modelo de caja</h2>
